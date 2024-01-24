@@ -94,6 +94,7 @@ input {
 }
 
 button {
+	width: 100%;
 	font-size: 35px;
 	background-color: #1892d3;
 	padding: 5px 10px;

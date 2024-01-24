@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Log In</title>
+    <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/user_form.css" rel="stylesheet">
@@ -11,7 +11,7 @@
       <div class="container">
 
         <!-- Log In -->
-        <div class="container__head">Log In</div>
+        <div class="container__head">Login Up</div>
 
         <!-- Body -->
         <div class="container__body">
@@ -25,22 +25,38 @@
               <input type="text" id="username">
             </div>
 
-            <!-- Password -->
+            <!-- Email -->
             <div class="container__body-title">
-              <lable for="password">Password</lable>
+              <lable for="email">Email</lable>
             </div>
             <div class="container__body-input">
-              <input type="password" id="password">
+              <input type="email" id="email">
+            </div>
+
+            <!-- Password -->
+            <div class="container__body-title">
+              <lable for="password1">Password</lable>
+            </div>
+            <div class="container__body-input">
+              <input type="password" id="password1">
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="container__body-title">
+              <lable for="password2">Confirm Password</lable>
+            </div>
+            <div class="container__body-input">
+              <input type="password" id="password2">
             </div>
 
             <div class="container__body-button">
-              <button type="submit">Sign In</button>
+              <button type="submit">Sign Up</button>
             </div>
           </form>
         </div>
 
         <!-- Footer -->
-        <div class="container__footer"><a href="#">Ще немаєте акаунта?</a><br><a href="#">Забули пароль?</a></div>
+        <div class="container__footer"><a href="#">Уже маєте акаунт?</a></div>
       </div>
     </div>
   </body>
