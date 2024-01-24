@@ -55,6 +55,13 @@ li:hover {
   display: flex;
 }
 
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Sidebar */
 .sidebar {
   height: 100%;
@@ -156,4 +163,32 @@ li:hover {
 }
 
 .main__content {
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+  /* Footer Socialmedia */
+.footer__socialmedia > ul {
+  display: flex;
+}
+
+.footer__img {
+  margin: 20px 20px;
+  font-size: 25px;
+}
+
+  /* Footer nav */
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.copyright {
+  text-align: center;
 }
