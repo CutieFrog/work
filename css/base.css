@@ -3,6 +3,10 @@
     --topNavbarHeight: 56px;
 }
 
+body {
+    background-color: #eee;
+}
+
 .sidebar-nav {
     width: var(--offcanvas-width);
 }
