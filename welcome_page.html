@@ -41,10 +41,6 @@
                                 <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
                             </div>
                         </div>
-                        <div>
-                            <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -52,11 +48,14 @@
     </div>
     <!-- Modal Login -->
     <!-- Modal Register -->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div c1lass="modal-content">
+    <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 1rem;">
                 <div class="card modal-body bg-dark text-white" style="border-radius: 15px;">
                     <div class="card-body p-5">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+                        </div>
                         <h2 class="text-uppercase fw-bold text-center mb-5">Create an account</h2>
                         <form>
                             <div class="form-outline mb-4">
@@ -75,14 +74,18 @@
                                 <label class="form-label" for="form3Example4cdg">Repeat your password</label>
                                 <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
                             </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                            <!-- Radio -->
+                            <div class="d-flex justify-content-between">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked">Student</label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Teacher</label>
+                                </div>
                             </div>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-                            </div>
+                            <!-- Radio -->
                             <div class="form-check d-flex justify-content-center mb-4">
                                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
                                 <label class="form-check-label" for="form2Example3g">
@@ -97,14 +100,12 @@
                             <div class="d-flex justify-content-center mt-4">
                                 <button type="button" class="btn btn-outline-light btn-lg px-5">Register</button>
                             </div>
-                            <p class="text-center text-white mt-5 mb-0">Have already an account? <a href="#!" class="fw-bold text-body"><u class="text-white-50">Login here</u></a></p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <!-- Modal Register -->
     <div class="container py-5 vh-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
