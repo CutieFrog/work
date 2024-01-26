@@ -145,6 +145,64 @@
         </div>
     </div>
     <!-- Offcanvas for add new user -->
+    <!-- Modal User Edit Modal -->
+    <div class="modal fade" id="userEditModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 1rem;">
+                <div class="card modal-body bg-dark text-white" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+                        </div>
+                        <h2 class="text-uppercase fw-bold text-center mb-5">Edit User</h2>
+                        <form>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example1cg">User Name</label>
+                                <input type="text" id="form3Example1cg" class="form-control form-control-lg" value="Test User" />
+                            </div>
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3cg">User Email</label>
+                                <input type="email" id="form3Example3cg" class="form-control form-control-lg" value="test_email@test.com" />
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Select Role</option>
+                                <option value="1">Admin</option>
+                                <option value="2">Moderator</option>
+                                <option value="3">Teacher</option>
+                                <option value="4">Student</option>
+                                <option value="5">Pending</option>
+                            </select>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="button" class="btn btn-outline-light btn-lg px-5">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal User Edit Modal -->
+    <!-- Modal Delete User -->
+    <div class="modal fade" id="userDeleteModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 1rem;">
+                <div class="card modal-body bg-dark text-white" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+                        </div>
+                        <h2 class="text-uppercase fw-bold text-center mb-5">Delete User</h2>
+                        <form>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="button" class="btn btn-outline-danger btn-lg px-5">Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Delete User -->
     <!-- Main -->
     <div class="main">
         <div class="container-fluid my-4">
@@ -308,8 +366,8 @@
                                         </td>
                                         <td class="align-middle">
                                             <div class="">
-                                                <a class="text-dark" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                <a class="text-dark" href="#"><i class="fa-solid fa-trash mx-2"></i></a>
+                                                <a class="text-dark" href="#"><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#userEditModal"></i></a>
+                                                <a class="text-dark" href="#"><i class="fa-solid fa-trash mx-2" data-bs-toggle="modal" data-bs-target="#userDeleteModal"></i></a>
                                                 <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                                 </button>
@@ -334,29 +392,27 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <div class="collapse navbar-collapse">
-                                            <td class="align-middle">
-                                                <i class="fa-solid fa-user-tie fa-2x"></i>
-                                                <span class="h5">Admin</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <span class="text-success border border-success rounded-pill border-1 p-1 border-">Active</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <div class="">
-                                                    <a class="text-dark" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                    <a class="text-dark" href="#"><i class="fa-solid fa-trash mx-2"></i></a>
-                                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                    </button>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                        <li><a class="dropdown-item" href="#">Test</a></li>
-                                                        <li><a class="dropdown-item" href="#">Test</a></li>
-                                                        <li><a class="dropdown-item" href="#">Test</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </div>
+                                        <td class="align-middle">
+                                            <i class="fa-solid fa-user-tie fa-2x"></i>
+                                            <span class="h5">Admin</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <span class="text-success border border-success rounded-pill border-1 p-1 border-">Active</span>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div class="">
+                                                <a class="text-dark" href="#"><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#userEditModal"></i></a>
+                                                <a class="text-dark" href="#"><i class="fa-solid fa-trash mx-2" data-bs-toggle="modal" data-bs-target="#userDeleteModal"></i></a>
+                                                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Test</a></li>
+                                                    <li><a class="dropdown-item" href="#">Test</a></li>
+                                                    <li><a class="dropdown-item" href="#">Test</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <!-- Test User -->
                                     <!-- Test User -->
@@ -380,8 +436,8 @@
                                         </td>
                                         <td class="align-middle">
                                             <div class="">
-                                                <a class="text-dark" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
-                                                <a class="text-dark" href="#"><i class="fa-solid fa-trash mx-2"></i></a>
+                                                <a class="text-dark" href="#"><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal" data-bs-target="#userEditModal"></i></a>
+                                                <a class="text-dark" href="#"><i class="fa-solid fa-trash mx-2" data-bs-toggle="modal" data-bs-target="#userDeleteModal"></i></a>
                                                 <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                                 </button>
