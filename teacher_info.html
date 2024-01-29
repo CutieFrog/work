@@ -284,8 +284,33 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- Modal Add User Post -->
+    <!-- Modal Overview -->
+    <div class="modal fade" id="overView" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 1rem;">
+                <div class="card modal-body bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body px-5">
+                        <div class="mb-md-5 mt-md-4 pb-2">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark fa-2x"></i></button>
+                            </div>
+                            <h2 class="fw-bold mb-5">Overview</h2>
+                            <form action="">
+                                <div class="form-outline mb-4">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores aperiam, rerum, illo tempore sint magni. Sed delectus minus beatae quae labore unde impedit, quasi cum a fugit earum voluptatibus laboriosam nihil eum numquam distinctio necessitatibus ex perspiciatis, id tempora. Qui ex, minima harum ab saepe aut id nisi neque sint, nihil nostrum quibusdam sunt excepturi sequi provident quam iusto quas voluptatem unde adipisci! Quam, voluptas inventore doloribus reprehenderit voluptate, rem et mollitia. Perspiciatis quae nulla, id officiis. Voluptas praesentium, delectus. Accusamus labore modi eaque enim dolore delectus nesciunt rem, aut dicta harum accusantium numquam natus eveniet, a sit non.</textarea>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <button type="button" class="btn btn-outline-light btn-lg px-5">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Overview -->
     <!-- Main -->
     <div class="main">
         <div class="container-fluid">
@@ -296,7 +321,7 @@
                             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
                             <div class="my-3">
                                 <h5 class="mb-0">John Smith</h5>
-                                <span class="small text-muted">Teacher</span>
+                                <span class="small text-muted">Teacher Jan 1 1998</span>
                             </div>
                             <!-- Buttons for followers -->
                             <!-- <div class="d-flex justify-content-center mb-2">
@@ -387,33 +412,57 @@
                     </div>
                     <div class="card">
                         <div class="card-body">
-                            <p class="h4 fw-bold">Overview</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="h4 fw-bold">Overview</p>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#overView"><i class="fa-solid fa-pen-to-square text-dark"></i></a>
+                            </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores aperiam, rerum, illo tempore sint magni. Sed delectus minus beatae quae labore unde impedit, quasi cum a fugit earum voluptatibus laboriosam nihil eum numquam distinctio necessitatibus ex perspiciatis, id tempora. Qui ex, minima harum ab saepe aut id nisi neque sint, nihil nostrum quibusdam sunt excepturi sequi provident quam iusto quas voluptatem unde adipisci! Quam, voluptas inventore doloribus reprehenderit voluptate, rem et mollitia. Perspiciatis quae nulla, id officiis. Voluptas praesentium, delectus. Accusamus labore modi eaque enim dolore delectus nesciunt rem, aut dicta harum accusantium numquam natus eveniet, a sit non.</p>
                         </div>
                     </div>
                     <div class="card mt-4">
                         <div class="card-body">
-                            <p class="h4 fw-bold mb-4">Education</p>
-                            <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                            <div class="d-flex">
+                                <p class="h4 fw-bold mb-4">Education</p>
+                                <a href="#"><i class="fa-solid fa-plus text-dark mx-1"></i></a>
+                            </div>
+                            <div class="d-flex">
+                                <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                                <a href="#"><i class="fa-solid fa-pen-to-square text-dark mx-1"></i></a>
+                            </div>
                             <p>2015-2019</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis impedit dolores explicabo iure modi dolorem ipsam aspernatur, ea veritatis. Corrupti omnis possimus reprehenderit perspiciatis error dolores deleniti obcaecati quo.</p>
-                            <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                            <div class="d-flex">
+                                <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                                <a href="#"><i class="fa-solid fa-pen-to-square text-dark mx-1"></i></a>
+                            </div>
                             <p>2019-2023</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis impedit dolores explicabo iure modi dolorem ipsam aspernatur, ea veritatis. Corrupti omnis possimus reprehenderit perspiciatis error dolores deleniti obcaecati quo.</p>
                         </div>
                     </div>
                     <div class="card mt-4">
                         <div class="card-body">
-                            <p class="h4 fw-bold mb-4">Experience</p>
-                            <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                            <div class="d-flex">
+                                <p class="h4 fw-bold mb-4">Experience</p>
+                                <a href="#"><i class="fa-solid fa-plus text-dark mx-1"></i></a>
+                            </div>
+                            <div class="d-flex">
+                                <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                                <a href="#"><i class="fa-solid fa-pen-to-square text-dark mx-1"></i></a>
+                            </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis impedit dolores explicabo iure modi dolorem ipsam aspernatur, ea veritatis. Corrupti omnis possimus reprehenderit perspiciatis error dolores deleniti obcaecati quo.</p>
-                            <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                            <div class="d-flex">
+                                <p class="h5 fw-bold">Lorem, ipsum dolor.</p>
+                                <a href="#"><i class="fa-solid fa-pen-to-square text-dark mx-1"></i></a>
+                            </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis impedit dolores explicabo iure modi dolorem ipsam aspernatur, ea veritatis. Corrupti omnis possimus reprehenderit perspiciatis error dolores deleniti obcaecati quo.</p>
                         </div>
                     </div>
                     <div class="card mt-4">
                         <div class="card-body">
-                            <p class="h4 fw-bold mb-4">Language</p>
+                            <div class="d-flex justify-content-between mb-4">
+                                <p class="h4 fw-bold">Language</p>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#overView"><i class="fa-solid fa-pen-to-square text-dark"></i></a>
+                            </div>
                             <span class="border border-secondary mx-2 p-2 text-white rounded-pill bg-secondary">English</span>
                             <span class="border border-secondary mx-2 p-2 text-white rounded-pill bg-secondary">German</span>
                         </div>
